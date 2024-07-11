@@ -1,0 +1,28 @@
+$utilities: (
+  "position": (
+      responsive: true,
+      property: position,
+      values: static relative absolute fixed sticky initial
+    ),
+  "border": (
+      responsive: true,
+      property: border,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+        0: 0,
+      )
+    ),
+  "font-size": (rfs: false,
+    responsive: true,
+    property: font-size,
+    class: fs,
+    values: $font-sizes ),
+  "width": (responsive: true,
+    property: width,
+    class: w,
+    values: (25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      auto: auto)),
+);

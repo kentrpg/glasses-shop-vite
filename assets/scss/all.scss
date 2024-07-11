@@ -8,10 +8,17 @@
 @import "~bootstrap/scss/functions";
 
 // // 2. Include any default variable overrides here
+@import "utils/variables";
 
 // // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/variables-dark";
+
+
+// 目的：container 設置在最大寬度時左右 padding 0
+// 作法：_container_scss %responsive-container-#{$breakpoint} 設置 @if $breakpoint == "xxl"
+
+@import "utils/utilities";
 
 // // 4. Include any default map overrides here
 
@@ -21,8 +28,8 @@
 @import "~bootstrap/scss/utilities";
 
 // // // 6. Optionally include any other parts as needed
-// @import "~bootstrap/scss/root";
-// @import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
 // @import "~bootstrap/scss/type";
 // @import "~bootstrap/scss/images";
 // @import "~bootstrap/scss/containers";
@@ -38,5 +45,6 @@
 @import "~bootstrap/scss/bootstrap";
 
 // 8. Add additional custom code here
+@import './base/reset';
 @import './layout';
 @import './pages/index.scss';
