@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <title>index</title>
@@ -13,7 +14,39 @@
 <body>
   <%- include('./layout/header'); -%>
   <main>
-    Hello
+    <section class="bg-primary-subtle py-10 py-sm-l">
+      <form class="container-fluid container-md">
+        <div class="w-100 w-sm-83 w-lg-50 mx-auto">
+          <h2 class="text-center fs-3 fs-sm-9 mb-6 mb-lg-12">聯絡我們</h2>
+          <p class="fs-1 fs-lg-2 mb-6">
+            我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+          </p>
+          <form>
+            <div class="mb-4">
+              <label for="contactName" class="form-label">姓名</label>
+              <input type="text" class="form-control" id="contactName" name="userName" placeholder="陳小明" aria-describedby="nameHelp">
+            </div>
+            <div class="mb-4">
+              <label for="contactPhone" class="form-label">聯絡電話</label>
+              <input type="tel" class="form-control" id="contactPhone" placeholder="0912-345-678" name="userPhone">
+            </div>
+            <div class="mb-4">
+              <label for="contactEmail" class="form-label">電子郵件</label>
+              <input type="mail" class="form-control" id="contactEmail" placeholder="example@email.com" name="userEmail">
+            </div>
+            <div class="mb-4">
+              <label for="contact" class="form-label">意見反應</label>
+              <textarea  class="form-control" id="contact" rows="5" placeholder="請輸入您的意見" name="userContact"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="privacy" name="agreePrivacy">
+              <label for="privacy" class="form-check-label">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+            </div>
+            <button type="submit" value="確認送出" class="btn btn-primary d-block w-sm-60 w-lg-66 mx-auto mt-2 mt-sm-8">確認送出</button>
+          </form>
+        </div>
+      </form>
+    </section>
   </main>
   <%- include('./layout/footer'); -%>
   <script type="module" src="../main.js"></script>

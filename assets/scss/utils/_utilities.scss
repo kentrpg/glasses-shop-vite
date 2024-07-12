@@ -1,17 +1,12 @@
 $utilities: (
-  "position": (
-      responsive: true,
-      property: position,
-      values: static relative absolute fixed sticky initial
-    ),
-  "border": (
-      responsive: true,
-      property: border,
-      values: (
-        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
-        0: 0,
-      )
-    ),
+  "position": (responsive: true,
+    property: position,
+    values: static relative absolute fixed sticky initial),
+  "border": (responsive: true,
+    property: border,
+    values: (null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+      0: 0,
+    )),
   "font-size": (rfs: false,
     responsive: true,
     property: font-size,
@@ -22,7 +17,15 @@ $utilities: (
     class: w,
     values: (25: 25%,
       50: 50%,
+      33: 33.33333%,  // col-4
+      66: 66.66667%,  // col-8
+      60: 60%,  // 確認送出按鈕
       75: 75%,
+      83: 83.33333%,  // col-10
       100: 100%,
       auto: auto)),
+  "font-roboto": (property: font-family,
+    class: font,
+    values: ($font-family-custom),
+  ),
 );
