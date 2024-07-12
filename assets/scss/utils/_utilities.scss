@@ -2,6 +2,15 @@ $utilities: (
   "position": (responsive: true,
     property: position,
     values: static relative absolute fixed sticky initial),
+  "align-items": (responsive: true,
+    property: align-items,
+    values: (start: flex-start,
+      end: flex-end,
+      center: center,
+      baseline: baseline,
+      stretch: stretch,
+      normal: normal,
+    )),
   "border": (responsive: true,
     property: border,
     values: (null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
@@ -17,15 +26,58 @@ $utilities: (
     class: w,
     values: (25: 25%,
       50: 50%,
-      33: 33.33333%,  // col-4
-      66: 66.66667%,  // col-8
-      60: 60%,  // 確認送出按鈕
+      33: 33.33333%,                       // col-4
+      66: 66.66667%,                       // col-8
+      60: 60%,                             // index.html form submit button
       75: 75%,
-      83: 83.33333%,  // col-10
+      83: 83.33333%,                       // col-10
       100: 100%,
       auto: auto)),
+  "height": (responsive: true,
+    property: height,
+    class: h,
+    values: (25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      banner-sm: 396px,
+      banner: 787px,
+      co-branded: 240px,                             // for index.html 聯名設計鏡框 section
+      card-body: calc(100% - 149px - 56px), // for index.html 顧客推薦 section card
+      auto: auto)),
+  "max-width": (property: max-width,
+    class: mw,
+    values: (100: 100%,
+      80: 80px,                             // logo
+    )),
+  "max-height": (property: max-height,
+    class: mh,
+    values: (100: 100%,
+      card-body: 511px,                     // for index.html 顧客推薦 section card
+    )),
+  "min-viewport-height": (property: min-height,
+    class: min-vh,
+    values: (100: 100vh,
+      card-body: 149px,                     // for index.html 顧客推薦 section card  
+    )),
   "font-roboto": (property: font-family,
     class: font,
     values: ($font-family-custom),
   ),
+  "background-position": (responsive: true,
+    property: background-position,
+    class: bg,
+    values: (top: top,
+      bottom: bottom,
+      left: left,
+      right: right,
+      center: center,
+  )),
+  "background-image": (responsive: true,
+    property: background,
+    class: bg,
+    values: (banner: url(/assets/images/home-header.png) no-repeat top center /cover fixed,
+      banner-sm: url(/assets/images/home-header-sm.png) no-repeat top center /cover,
+      co-branded: url(/assets/images/index-bg-md.png) no-repeat center/cover,
+  )),
 );
