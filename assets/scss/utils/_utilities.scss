@@ -41,7 +41,8 @@ $utilities: (
       75: 75%,
       100: 100%,
       banner-sm: 396px,
-      banner: 787px,
+      banner-md: 787px,
+      banner-lg: calc(100vh - 80px),
       co-branded: 240px,                             // for index.html 聯名設計鏡框 section
       card-body: calc(100% - 149px - 56px), // for index.html 顧客推薦 section card
       auto: auto)),
@@ -76,8 +77,8 @@ $utilities: (
   "background-image": (responsive: true,
     property: background,
     class: bg,
-    values: (banner: url(/assets/images/home-header.png) no-repeat top center /cover fixed,
-      banner-sm: url(/assets/images/home-header-sm.png) no-repeat top center /cover,
-      co-branded: url(/assets/images/index-bg-md.png) no-repeat center/cover,
+    values: (banner: url(/assets/images/home-header.png) no-repeat top center /cover,
+      banner-sm: url(/assets/images/home-header-sm.png) no-repeat center center /cover,
+      co-branded: url(/assets/images/index-bg-md.png) no-repeat center/cover fixed,
   )),
 );
