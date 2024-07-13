@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap");
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   src: local(Roboto),   
        url(Roboto.woff);
-  unicode-range: U+000-5FF, U+1e00-1fff, U+2000-2300;
+  unicode-range: U+0041-005A, U+0061-007A, U+00C0-00FF;
+}
+
+@font-face {
+  font-family: "Noto Sans TC";
+  src: local(Noto Sans TC),
+       url(NotoSansTC-Regular.woff);
+  unicode-range: U+0030-0039, U+3000-303F, U+FF00-FFEF, U+4E00-9FFF, U+3400-4DBF, U+20000-2A6DF, U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF, U+2CEB0-2EBEF, U+30000-3134F, U+0020-0027, U+0028-002F, U+003A-0040, U+005B-0060, U+007B-007E;
 }
 
 ol, ul {
