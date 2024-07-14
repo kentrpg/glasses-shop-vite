@@ -36,6 +36,7 @@ $utilities: (
       75: 75%,
       83: 83.33333%,                       // col-10
       100: 100%,
+      navbar: calc(100% + 24px),           // for haeder block navbar
       auto: auto)),
   "height": (responsive: true,
     property: height,
