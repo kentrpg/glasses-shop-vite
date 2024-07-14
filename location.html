@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
-    <script type="module" crossorigin src="/glasses-shop-vite/assets/main-19761c24.js"></script>
-    <link rel="stylesheet" href="/glasses-shop-vite/assets/main-3ffa181b.css">
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <title>門市據點</title>
+  <script type="module" crossorigin src="/glasses-shop-vite/assets/main-f3e0135e.js"></script>
+  <link rel="stylesheet" href="/glasses-shop-vite/assets/main-44d447c7.css">
+</head>
+
+<body>
+  <header>
   <nav class="navbar navbar-expand-sm bg-primary pb-0 pb-sm-3">
     <div class="container-fluid container-md">
-      <a class="navbar-brand mx-auto mx-sm-0" href="#">
+      <a class="navbar-brand mx-auto mx-sm-0" href="./index.html">
         <picture>
           <source srcset="data:image/png;base64,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 " media="(max-width: 577px)" />
           <img src="/glasses-shop-vite/assets/logo-white-5423463a.png" alt="logo" class="mw-80">
@@ -20,26 +28,217 @@
       </a>
       <div class="w-100 w-sm-auto fw-light pb-xxl pb-sm-0 mt-4 mt-sm-0">
         <ul class="w-100 w-sm-auto navbar-nav position-absolute position-sm-initial start-0 flex-wrap flex-row justify-content-sm-end text-center me-0 me-sm-nm">
-          <li class="nav-item w-50 w-sm-auto border border-sm-0">
+          <li class="nav-item w-50 w-sm-auto border border-sm-0 border-white">
             <a class="nav-link fs-sm-2 active" aria-current="page" href="#">系列鏡框</a>
           </li>
-          <li class="nav-item w-50 w-sm-auto border border-sm-0">
-            <a class="nav-link fs-sm-2" href="#">門市據點</a>
+          <li class="nav-item w-50 w-sm-auto border border-sm-0 border-white">
+            <a class="nav-link fs-sm-2" href="./location.html">門市據點</a>
           </li>
-          <li class="nav-item w-50 w-sm-auto border border-sm-0">
+          <li class="nav-item w-50 w-sm-auto border border-sm-0 border-white">
             <a class="nav-link fs-sm-2" href="#">部落格</a>
           </li>
-          <li class="nav-item w-50 w-sm-auto border border-sm-0">
+          <li class="nav-item w-50 w-sm-auto border border-sm-0 border-white">
             <a class="nav-link fs-sm-2" href="#">常見問題</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-</header>    
+</header>    <main class="py-10 py-sm-xl pb-l pb-sm-xl">
+      <div class="container-fluid container-md">
+        <h2 class="border-start border-x border-primary-subtle text-black fs-sm-9 ps-4 mb-6 mb-lg-8">門市據點</h2>
+        <div class="d-flex align-items-center mb-6 mb-sm-10">
+          <label for="region" class="fs-1 fs-sm-3 me-2 me-sm-4">選擇地區</label>
+          <select id="region" class="form-select mw-s cursor-pointer" aria-label="選擇門市地區">
+            <option value="大同鄉">大同鄉</option>
+            <option value="神岡區">神岡區</option>
+            <option value="來義鄉">來義鄉</option>
+            <option value="六腳鄉">六腳鄉</option>
+            <option value="角板鄉">角板鄉</option>
+          </select>
+        </div>
+        <div class="row gy-6 gy-lg-12 gx-sm-6">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <img src="/glasses-shop-vite/assets/store-1-e8e7cac3.png" alt="充滿工業風格的旗艦店，使用黑白色調，佈局簡潔">
+            <div class="border">
+              <h3 class="border-bottom fw-normal fs-3 py-2 px-6">台北中山旗艦店</h3>
+              <address class="d-flex flex-column px-6 py-2">
+                <div class="mb-2">
+                  <a href="tel:(02)000-1234" class="fs-2 text-dark">
+                    <span class="material-icons material-icons-outlined align-sub fs-3 me-2">
+                      phone
+                    </span>
+                    電話：(03)980-1965
+                  </a>
+                </div>
+                <div class="mb-2">
+                  <span class="material-icons material-icons-outlined align-middle fs-3 me-2">
+                    schedule
+                  </span>
+                  <span class="align-middle fs-2 text-dark">
+                    營業時間：06:00-22:00
+                  </span>
+                </div>
+                <div class="mb-2">
+                  <a href="https://maps.app.goo.gl/6og66nTuRNY45xjk8" class="fs-2 text-dark">
+                    <span class="material-icons material-icons-outlined align-sub fs-3 me-2">
+                      place
+                    </span>
+                    地址：宜蘭縣大同鄉泰雅路一段34號
+                  </a>
+                </div>
+              </address>
+            </div>
+            <div class="d-grid">
+              <a class="btn btn-black" href="location-info.html" role="button">詳細資訊</a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <img src="/glasses-shop-vite/assets/store-2-e9ba0027.png" alt="簡約現代風格的台北綠園店，有白色及木紋牆壁，佈局讓人很放鬆">
+            <div class="border">
+              <h3 class="border-bottom fw-normal fs-3 py-2 px-6">台北綠園店</h3>
+              <address class="d-flex flex-column px-6 py-2">
+                <div class="mb-2">
+                  <a href="tel:(02)000-1234" class="fs-2 text-dark">
+                    <span class="material-icons material-icons-outlined align-sub fs-3 me-2">
+                      phone
+                    </span>
+                    電話：(02)000-2345
+                  </a>
+                </div>
+                <div class="mb-2">
+                  <span class="material-icons material-icons-outlined align-middle fs-3 me-2">
+                    schedule
+                  </span>
+                  <span class="align-middle fs-2 text-dark">
+                    營業時間：10:00-21:00
+                  </span>
+                </div>
+                <div class="mb-2">
+                  <a href="https://maps.app.goo.gl/6og66nTuRNY45xjk8" class="fs-2 text-dark">
+                    <span class="material-icons material-icons-outlined align-sub fs-3 me-2">
+                      place
+                    </span>
+                    地址：台北市中正區復興南路 132-1 號
+                  </a>
+                </div>
+              </address>
+            </div>
+            <div class="d-grid">
+              <a class="btn btn-black" href="location-info.html" role="button">詳細資訊</a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <img src="/glasses-shop-vite/assets/store-3-0f3830b0.png" alt="簡約現代風格的台中清水旗艦店，有白色及木紋牆壁，佈局簡潔">
+            <div class="border">
+              <h3 class="border-bottom fw-normal fs-3 py-2 px-6">台中清水旗艦店</h3>
+              <address class="d-flex flex-column px-6 py-2">
+                <div class="mb-2">
+                  <a href="tel:(02)000-1234" class="fs-2 text-dark">
+                    <span class="material-icons material-icons-outlined align-sub fs-3 me-2">
+                      phone
+                    </span>
+                    電話：(02)000-1234
+                  </a>
+                </div>
+                <div class="mb-2">
+                  <span class="material-icons material-icons-outlined align-middle fs-3 me-2">
+                    schedule
+                  </span>
+                  <span class="align-middle fs-2 text-dark">
+                    營業時間：10:00-21:00
+                  </span>
+                </div>
+                <div class="mb-2">
+                  <a href="https://maps.app.goo.gl/6og66nTuRNY45xjk8" class="fs-2 text-dark">
+                    <span class="material-icons material-icons-outlined align-sub fs-3 me-2">
+                      place
+                    </span>
+                    地址：台中市清水區經南一路 23 號 8 樓
+                  </a>
+                </div>
+              </address>
+            </div>
+            <div class="d-grid">
+              <a class="btn btn-black" href="location-info.html" role="button">詳細資訊</a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <img src="/glasses-shop-vite/assets/store-4-64d480b6.png" alt="工業風的高雄中正形象店，使用大面的落地玻璃簡潔明亮，令人感到很放鬆">
+            <div class="border">
+              <h3 class="border-bottom fw-normal fs-3 py-2 px-6">高雄中正形象店</h3>
+              <address class="d-flex flex-column px-6 py-2">
+                <div class="mb-2">
+                  <a href="tel:(02)000-1234" class="fs-2 text-dark">
+                    <span class="material-icons material-icons-outlined align-sub fs-3 me-2">
+                      phone
+                    </span>
+                    電話：(07)000-2345
+                  </a>
+                </div>
+                <div class="mb-2">
+                  <span class="material-icons material-icons-outlined align-middle fs-3 me-2">
+                    schedule
+                  </span>
+                  <span class="align-middle fs-2 text-dark">
+                    營業時間：10:00-21:00
+                  </span>
+                </div>
+                <div class="mb-2">
+                  <a href="https://maps.app.goo.gl/6og66nTuRNY45xjk8" class="fs-2 text-dark">
+                    <span class="material-icons material-icons-outlined align-sub fs-3 me-2">
+                      place
+                    </span>
+                    地址：高雄市苓雅區中正路 38 號 12 樓
+                  </a>
+                </div>
+              </address>
+            </div>
+            <div class="d-grid">
+              <a class="btn btn-black" href="location-info.html" role="button">詳細資訊</a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <img src="/glasses-shop-vite/assets/store-5-6f093e06.png" alt="簡約的高雄夢時代店，有繽紛的椅子，使人感覺愉快">
+            <div class="border">
+              <h3 class="border-bottom fw-normal fs-3 py-2 px-6">高雄夢時代店</h3>
+              <address class="px-6 py-2">
+                <div class="d-flex align-items-center mb-2">
+                  <span class="material-icons material-icons-outlined fs-3 me-2">
+                    phone
+                  </span>
+                  <a href="tel:(02)000-1234" class="fs-2 text-dark">
+                    電話：(07)000-1234
+                  </a>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <span class="material-icons material-icons-outlined fs-3 me-2">
+                    schedule
+                  </span>
+                  <span class="fs-2 text-dark">
+                    營業時間：10:00-21:00
+                  </span>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <span class="material-icons material-icons-outlined fs-3 me-2">
+                    place
+                  </span>
+                  <a href="https://maps.app.goo.gl/6og66nTuRNY45xjk8" class="fs-2 text-dark">
+                    地址：高雄市前鎮區中華一路 63 號 6 樓
+                  </a>
+                </div>
+              </address>
+            </div>
+            <div class="d-grid">
+              <a class="btn btn-black" href="location-info.html" role="button">詳細資訊</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer class="bg-primary text-white pt-6 pt-md-12 pb-6 pb-md-10 pb-lg-8">
   <div class="container-fluid container-md">
-    <div class="d-flex justify-content-between border-bottom pb-6 pb-sm-8 mb-4 mb-sm-8">
+    <div class="d-flex justify-content-between border-bottom border-white pb-6 pb-sm-8 mb-4 mb-sm-8">
       <div class="font-noto-sans">
         <nav class="nav d-none d-sm-flex gap-sm-7 gap-md-10 gap-lg-12 fw-light mb-6">
           <a class="nav-link px-0 py-sm-2 py-md-3 active" aria-current="page" href="#">首頁</a>
@@ -94,7 +293,7 @@
       </ul>
     </div>
   </div>
-</footer>
-    
-  </body>
+</footer>      
+</body>
+
 </html>
