@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <title>門市據點資訊</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <main class="py-10 py-sm-xl pb-l pb-sm-xl">
+      <div class="container-fluid container-md">
+        <h2 class="border-start border-x border-primary-subtle text-black fs-sm-9 ps-4 mb-6 mb-lg-8">門市據點</h2>
+        <div class="d-flex align-items-center mb-6 mb-sm-10">
+          <label for="region" class="text-nowrap fs-1 fs-sm-3 me-2 me-sm-4">選擇地區</label>
+          <select id="region" class="form-select mw-s cursor-pointer" aria-label="選擇門市地區">
+            <option value="大同鄉">大同鄉</option>
+            <option value="神岡區">神岡區</option>
+            <option value="來義鄉">來義鄉</option>
+            <option value="六腳鄉">六腳鄉</option>
+            <option value="角板鄉">角板鄉</option>
+          </select>
+        </div>
+        <div class="row gy-6 gx-lg-6">
+          <div class="col-12 col-lg-5">
+            <div class="d-block d-sm-flex flex-column flex-sm-row flex-lg-column gap-0 gap-sm-6 gap-lg-0">
+              <div class="w-100 w-sm-50 w-lg-100 flex-grow-1 flex-shrink-0 flex-basis-0">
+                <img class="img-fluid h-100 object-fit-cover" src="/assets/images/store-1.png" alt="充滿工業風格的旗艦店，使用黑白色調，佈局簡潔">
+              </div>
+              <div class="w-100 w-sm-50 w-lg-100 flex-grow-1 flex-shrink-0 flex-basis-0">
+                <div class="border">
+                  <h3 class="border-bottom fw-normal fs-3 py-2 px-6">台北中山旗艦店</h3>
+                  <address class="d-flex flex-column px-6 py-2">
+                    <div class="mb-2">
+                      <a href="tel:(02)000-1234" class="fs-2 text-dark">
+                        <span class="material-icons material-icons-outlined align-sub fs-3 me-2">
+                          phone
+                        </span>
+                        電話：(02)000-1234
+                      </a>
+                    </div>
+                    <div class="mb-2">
+                      <span class="material-icons material-icons-outlined align-middle fs-3 me-2">
+                        schedule
+                      </span>
+                      <span class="align-middle fs-2 text-dark">
+                        營業時間：10:00-21:00
+                      </span>
+                    </div>
+                    <div class="mb-2">
+                      <a href="https://maps.app.goo.gl/6og66nTuRNY45xjk8" class="fs-2 text-dark">
+                        <span class="material-icons material-icons-outlined align-sub fs-3 me-2">
+                          place
+                        </span>
+                        地址：台北市中山區南京東路25巷2-1號
+                      </a>
+                    </div>
+                  </address>
+                </div>
+                <div class="d-none d-lg-grid">
+                  <a class="btn btn-black" href="location-info.html" role="button">詳細資訊</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <iframe class="h-map-sm h-md-map-md h-lg-100 w-100"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14457.834048165518!2d121.529105!3d25.052444!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a966f6fc092d%3A0x9f740ea896779b57!2zMTA0OTHlj7DngaPlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuozmrrUyNeiZnw!5e0!3m2!1szh-TW!2sus!4v1720960125018!5m2!1szh-TW!2sus"
+              style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

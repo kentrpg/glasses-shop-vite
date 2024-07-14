@@ -29,7 +29,7 @@ $utilities: (
     property: width,
     class: w,
     values: (25: 25%,
-      50: 50%,
+      50: calc(50% - 12px),                // for store-locations.html
       33: 33.33333%,                       // col-4
       66: 66.66667%,                       // col-8
       60: 60%,                             // index.html form submit button
@@ -44,6 +44,8 @@ $utilities: (
       50: 50%,
       75: 75%,
       100: 100%,
+      map-md: 414px,
+      map-sm: 208px,
       banner-sm: 396px,
       banner-md: 787px,
       banner-lg: calc(100vh - 80px),
