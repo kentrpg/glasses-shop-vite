@@ -1,0 +1,171 @@
+@use "sass:math";
+
+// Color system
+$white:                 #ffffff;
+$primary:               #AA0601;
+$black:                 #000000;
+$light:                 #DCDCDC;   // border-light
+$dark:                  #212529;
+$orange:                #B75929;
+$brown:                 #650300;
+$brown-dark:            #5F3E2D;
+$primary-bg-subtle:     #FBF2F2;
+$cement-gray:           #555555;   // for blog.html article content
+$dark-text-emphasis:    rgba($black, .7);;   // for blog.html article time
+$light-text-emphasis:   rgba(#0A0A0A, .6);   // for article.html last figcaption
+$light-border-subtle:   #707070;  // for article.html
+
+// scss-docs-start theme-color-variables
+$theme-colors: (
+  "primary":    $primary,
+  // "secondary":  $secondary,
+  // "success":    $success,
+  // "info":       $info,
+  // "warning":    $warning,
+  // "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "orange":     $orange,
+  "brown":      $brown,
+  "brown-dark": $brown-dark,
+  "black":      $black,
+  "white":      $white,
+);
+
+// Spacing
+$spacers: (
+  "0":   0,
+  "s":   .375rem,  // 6
+  "m":   .875rem,  // 14
+  "l":   4rem,     // 64
+  "xl":  5rem,     // 80
+  "xxl": 6.5rem,   // 104
+  "1":   .25rem,   // 4
+  "2":   .5rem,    // 8
+  "3":   .75rem,   // 12
+  "4":   1rem,     // 16
+  "5":   1.25rem,  // 20
+  "6":   1.5rem,   // 24
+  "7":   1.75rem,  // 28
+  "8":   2rem,     // 32
+  "9":   2.25rem,  // 36
+  "10":  2.5rem,   // 40
+  "11":  2.75rem,  // 44
+  "12":  3rem,     // 48
+  "13":  3.75rem,  // 60
+);
+
+// Typography
+
+$font-sizes: (
+  "s":   .875rem,   // 14
+  "m":   1.1875rem, // 19
+  "l":   5.25rem,   // 84
+  "xl":  4rem,      // 64
+  "xxl": 6.25rem,   // 100
+  "1":   1rem,      // 16
+  "2":   1.25rem,   // 20
+  "3":   1.5rem,    // 24
+  "4":   1.75rem,   // 28
+  "5":   2rem,      // 32
+  "6":   2.25rem,   // 36
+  "7":   2.5rem,    // 40
+  "8":   2.75rem,   // 44
+  "9":   3rem,      // 48
+);
+
+$font-weight-black:                 900;   // for blog.html article more link
+
+$headings-line-height:              1.5;
+$body-color:                        $black;
+
+// Links
+$link-color:                        $white;
+
+$font-family-sans-serif:            "Noto Sans TC", Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-roboto:                "Roboto", sans-serif;
+$font-family-noto-sans:             "Noto Sans TC", sans-serif;
+$font-family-noto:                  "Noto Sans", sans-serif;
+
+$font-family-custom: (
+  "roboto": $font-family-roboto,
+  "noto-sans": $font-family-noto-sans,
+  "noto": $font-family-noto,
+);
+
+// Container
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1296px
+) !default;
+
+$container-padding-x:               1.75rem;  // 1.75/2=0.875
+
+// Components
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+  x: 8px
+);
+
+$pagination-border-color: $cement-gray;
+$border-color:            #00000020;
+$primary-border-subtle:   #9F1213;    // for page title border
+
+$box-shadow:                0 2px 6px #00000029; // for index.html 顧客推薦 section card
+
+// Button
+$btn-padding-y:                     16px;
+$btn-font-size:                     16px;
+$btn-border-width:                  0;
+$btn-border-radius:                 0;
+$btn-font-weight:                   700;
+
+// Forms
+$input-bg:                          transparent;
+$input-border-color:                $black;
+$input-placeholder-color:           rgba($input-border-color, .2);
+$input-border-radius:               0;
+$input-focus-box-shadow:            0 0 0 .15rem rgba($primary, .25);
+
+$form-check-input-width:            1.2em;
+$form-check-padding-start:          1.5em; // 調整 form-check-input 與 form-check-label 的間距
+$form-check-input-border-radius:    .12rem;
+$form-check-input-border:           2px solid $input-border-color;
+
+$form-select-color:                 rgba(#495057, .75);
+$form-select-border-color:          #CED4DA;
+
+// Navbar work through header
+$navbar-padding-y:                  .75rem;
+$navbar-nav-link-padding-x:         .875rem;
+$nav-link-padding-y:                .8125rem;
+$nav-link-font-size:                16px; 
+$nav-link-color:                    $white;
+$navbar-light-color:                $white;
+$navbar-light-active-color:         $white;
+$navbar-brand-padding-y:            0;
+
+// Card
+// for index.html 顧客推薦 section card
+$text-muted:                        #707070;  // card time color
+$card-spacer-y:                     1rem;
+$card-spacer-x:                     1rem;
+$card-border-radius:                .25rem;
+$card-cap-padding-y:                1rem;       // for card-footer
+
+// Figures
+$figure-caption-font-size:          1rem;
+
+// Breadcrumbs
+$breadcrumb-active-color:           $primary;
+$breadcrumb-item-padding-x:         4px;
+
+// Options
+$enable-negative-margins:           true;

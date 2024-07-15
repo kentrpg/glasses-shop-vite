@@ -1,8 +1,7 @@
 $utilities: (
   "align": (property: vertical-align,
-      class: align,
-      values: baseline top middle bottom text-bottom text-top sub
-    ),
+    class: align,
+    values: baseline top middle bottom text-bottom text-top sub),
   "position": (responsive: true,
     property: position,
     values: static relative absolute fixed sticky initial),
@@ -25,18 +24,49 @@ $utilities: (
     property: font-size,
     class: fs,
     values: $font-sizes ),
+  "font-weight": (responsive: true,
+    property: font-weight,
+    class: fw,
+    values: (lighter: $font-weight-lighter,
+      light: $font-weight-light,
+      normal: $font-weight-normal,
+      medium: $font-weight-medium,
+      semibold: $font-weight-semibold,
+      bold: $font-weight-bold,
+      bolder: $font-weight-bolder,
+      black: $font-weight-black)),
+  "color": (responsive: true,
+    property: color,
+    class: text,
+    local-vars: ("text-opacity": 1),
+    values: map-merge($theme-colors,
+      ("body": to-rgb($body-color),
+        "cement-gray": $cement-gray,
+        "muted": var(--#{$prefix}secondary-color), // deprecated
+        "black-50": rgba($black, .5), // deprecated
+        "white-50": rgba($white, .5), // deprecated
+        "body-secondary": var(--#{$prefix}secondary-color),
+        "body-tertiary": var(--#{$prefix}tertiary-color),
+        "body-emphasis": var(--#{$prefix}emphasis-color),
+        "reset": inherit,
+      ))),
+  "text-transform": (responsive: true,
+    property: text-transform,
+    class: text,
+    values: lowercase uppercase capitalize),
   "width": (responsive: true,
     property: width,
     class: w,
     values: (25: 25%,
-      50: calc(50% - 12px),                // for store-locations.html
-      33: 33.33333%,                       // col-4
-      66: 66.66667%,                       // col-8
-      60: 60%,                             // index.html form submit button
+      50: calc(50% - 12px), // for store-locations.html
+      33: 33.33333%, // col-4
+      66: 66.66667%, // col-8
+      60: 60%, // index.html form submit button
       75: 75%,
-      83: 83.33333%,                       // col-10
+      83: 83.33333%, // col-10
       100: 100%,
-      navbar: calc(100% + 24px),           // for haeder block navbar
+      social-media-icon: 24px,  // fot article.html social media
+      navbar: calc(100% + 24px), // for haeder block navbar
       auto: auto)),
   "height": (responsive: true,
     property: height,
@@ -50,25 +80,25 @@ $utilities: (
       banner-sm: 396px,
       banner-md: 787px,
       banner-lg: calc(100vh - 80px),
-      co-branded: 240px,                             // for index.html 聯名設計鏡框 section
+      co-branded: 240px, // for index.html 聯名設計鏡框 section
       card-body: calc(100% - 149px - 56px), // for index.html 顧客推薦 section card
       auto: auto)),
   "max-width": (responsive: true,
     property: max-width,
     class: mw,
     values: (100: 100%,
-      80: 80px,                             // logo
-      s: 304px,                             // location.html select
+      80: 80px, // logo
+      s: 304px, // location.html select
     )),
   "max-height": (property: max-height,
     class: mh,
     values: (100: 100%,
-      card-body: 511px,                     // for index.html 顧客推薦 section card
+      card-body: 511px, // for index.html 顧客推薦 section card
     )),
   "min-viewport-height": (property: min-height,
     class: min-vh,
     values: (100: 100vh,
-      card-body: 149px,                     // for index.html 顧客推薦 section card  
+      card-body: 149px, // for index.html 顧客推薦 section card  
     )),
   "font-roboto": (property: font-family,
     class: font,
@@ -82,16 +112,16 @@ $utilities: (
       left: left,
       right: right,
       center: center,
-  )),
+    )),
   "background-image": (responsive: true,
     property: background,
     class: bg,
     values: (banner: url(/assets/images/home-header.png) no-repeat top center /cover,
       banner-sm: url(/assets/images/home-header-sm.png) no-repeat center center /cover,
       co-branded: url(/assets/images/index-bg-md.png) no-repeat center/cover fixed,
-  )),
+    )),
   "cursor": (property: cursor,
     class: cursor,
     values: (pointer, default,
-  )),
+    )),
 );
