@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-  <title>門市據點資訊</title>
+  <title>文章</title>
   <script type="module" crossorigin src="/glasses-shop-vite/assets/main-1da18160.js"></script>
   <link rel="stylesheet" href="/glasses-shop-vite/assets/main-0fb20548.css">
 </head>
@@ -17,153 +17,44 @@
 <body>
   <header>
   <nav class="navbar navbar-expand-sm bg-primary pb-0 pb-sm-3">
-    <div class="container-fluid container-md">
+    <div class="container-fluid container-md flex-column flex-row">
       <a class="navbar-brand mx-auto mx-sm-0" href="./index.html">
         <picture>
           <source srcset="data:image/png;base64,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 " media="(max-width: 577px)" />
           <img src="/glasses-shop-vite/assets/logo-white-5423463a.png" alt="logo" class="mw-80">
         </picture>    
       </a>
-      <div class="w-100 w-sm-auto fw-light pb-xxl pb-sm-0 mt-4 mt-sm-0">
-        <ul class="w-navbar w-sm-auto navbar-nav position-absolute position-sm-initial start-0 flex-wrap flex-row justify-content-sm-end text-center me-0 me-sm-nm">
-          <li class="nav-item w-48 w-sm-auto border border-sm-0 border-white">
-            <a class="nav-link fs-sm-2 active" aria-current="page" href="./glasses-optical.html">系列鏡框</a>
+      <ul class="w-100 d-flex flex-wrap justify-content-sm-end">
+        <li class="w-50 border border-sm-0 border-white"><a href="#" class="">系列鏡框</a></li>
+        <li class="w-50 border border-sm-0 border-white"><a href="#" class="">系列鏡框</a></li>
+      </ul>
+      <!-- <ul class="w-100 w-sm-auto navbar-nav flex-wrap flex-row justify-content-sm-end text-center me-0 me-sm-nm">
+        <li class="nav-item w-50 w-sm-auto border border-sm-0 border-white">
+          <a class="nav-link fs-sm-2 active" aria-current="page" href="#">系列鏡框</a>
+        </li>
+        <li class="nav-item w-50 w-sm-auto border border-sm-0 border-white">
+          <a class="nav-link fs-sm-2" href="./store.html">門市據點</a>
+        </li>
+      </ul> -->
+      <!-- <div class="w-100 w-sm-auto fw-light pb-xxl pb-sm-0 mt-4 mt-sm-0"> -->
+        <!-- <ul class="w-navbar w-sm-auto navbar-nav flex-wrap flex-row justify-content-sm-end text-center me-0 me-sm-nm">
+          <li class="nav-item w-50 w-sm-auto border border-sm-0 border-white">
+            <a class="nav-link fs-sm-2 active" aria-current="page" href="#">系列鏡框</a>
           </li>
-          <li class="nav-item w-48 w-sm-auto border border-sm-0 border-white">
+          <li class="nav-item w-50 w-sm-auto border border-sm-0 border-white">
             <a class="nav-link fs-sm-2" href="./store.html">門市據點</a>
           </li>
-          <li class="nav-item w-48 w-sm-auto border border-sm-0 border-white">
-            <a class="nav-link fs-sm-2" href="./blog.html">部落格</a>
-          </li>
-          <li class="nav-item w-48 w-sm-auto border border-sm-0 border-white">
-            <a class="nav-link fs-sm-2" href="./faq.html">常見問題</a>
-          </li>
-        </ul>
-      </div>
+        </ul> -->
+      <!-- </div> -->
     </div>
   </nav>
-</header>    <main class="py-10 py-sm-xl pb-l pb-sm-xl">
-      <div class="container-fluid container-md">
-        <h2 class="border-start border-x border-primary-subtle text-black fs-sm-9 ps-4 mb-6 mb-lg-8">門市據點</h2>
-        <div class="d-flex align-items-center mb-6 mb-sm-10">
-          <label for="region" class="text-nowrap fs-1 fs-sm-3 me-2 me-sm-4">選擇地區</label>
-          <select id="region" class="form-select mw-s cursor-pointer" aria-label="選擇門市地區">
-            <option value="大同鄉">大同鄉</option>
-            <option value="神岡區">神岡區</option>
-            <option value="來義鄉">來義鄉</option>
-            <option value="六腳鄉">六腳鄉</option>
-            <option value="角板鄉">角板鄉</option>
-          </select>
-        </div>
-        <div class="row gy-6 gx-lg-6">
-          <div class="col-12 col-lg-5">
-            <div class="d-block d-sm-flex flex-column flex-sm-row flex-lg-column gap-0 gap-sm-6 gap-lg-0">
-              <div class="w-100 w-sm-50 w-lg-100 flex-grow-1 flex-shrink-0 flex-basis-0">
-                <img class="img-fluid h-100 object-fit-cover" src="/glasses-shop-vite/assets/store-1-e8e7cac3.png" alt="充滿工業風格的旗艦店，使用黑白色調，佈局簡潔">
-              </div>
-              <div class="w-100 w-sm-50 w-lg-100 flex-grow-1 flex-shrink-0 flex-basis-0">
-                <div class="border">
-                  <h3 class="border-bottom fw-normal fs-3 text-dark py-2 px-6">台北中山旗艦店</h3>
-                  <address class="d-flex flex-column px-6 py-2">
-                    <div class="mb-2">
-                      <a href="tel:(02)000-1234" class="fs-2 text-dark">
-                        <span class="material-icons material-icons-outlined align-sub fs-3 me-2">
-                          phone
-                        </span>
-                        電話：(02)000-1234
-                      </a>
-                    </div>
-                    <div class="mb-2">
-                      <span class="material-icons material-icons-outlined align-middle fs-3 text-dark me-2">
-                        schedule
-                      </span>
-                      <span class="align-middle fs-2 text-dark">
-                        營業時間：10:00-21:00
-                      </span>
-                    </div>
-                    <div class="mb-2">
-                      <a href="https://maps.app.goo.gl/6og66nTuRNY45xjk8" class="fs-2 text-dark">
-                        <span class="material-icons material-icons-outlined align-sub fs-3 me-2">
-                          place
-                        </span>
-                        地址：台北市中山區南京東路25巷2-1號
-                      </a>
-                    </div>
-                  </address>
-                </div>
-                <div class="d-none d-lg-grid">
-                  <a class="btn btn-black" href="location-info.html" role="button">詳細資訊</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-7">
-            <iframe class="h-map-sm h-md-map-md h-lg-100 w-100"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14457.834048165518!2d121.529105!3d25.052444!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a966f6fc092d%3A0x9f740ea896779b57!2zMTA0OTHlj7DngaPlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuozmrrUyNeiZnw!5e0!3m2!1szh-TW!2sus!4v1720960125018!5m2!1szh-TW!2sus"
-              style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer class="bg-primary text-white pt-6 pt-md-12 pb-6 pb-md-10 pb-lg-8">
-  <div class="container-fluid container-md">
-    <div class="d-flex justify-content-between border-bottom border-white pb-6 pb-sm-8 mb-4 mb-sm-8">
-      <div class="font-noto-sans">
-        <nav class="nav d-none d-sm-flex gap-sm-7 gap-md-10 gap-lg-12 fw-light mb-6">
-          <a class="nav-link px-0 py-sm-2 py-md-3 active" aria-current="page" href="./index.html">首頁</a>
-          <a class="nav-link px-0 py-sm-2 py-md-3" href="./glasses-optical.html">系列鏡框</a>
-          <a class="nav-link px-0 py-sm-2 py-md-3" href="./store.html">門市據點</a>
-          <a class="nav-link px-0 py-sm-2 py-md-3" href="./blog.html">部落格</a>
-          <a class="nav-link px-0 py-sm-2 py-md-3" href="./faq.html">常見問題</a>
-        </nav>
-        <address>
-          <a href="tel:+0800-000-000" class="d-flex align-items-center">
-            <span class="material-icons material-icons-outlined fs-3 fs-sm-9 me-2 me-sm-4">
-              phone
-            </span>
-            <span class="fs-1 fs-sm-4 fs-md-6">0800-000-000</span>
-          </a>
-          <a href="mailto:glasses@business.com" class="d-flex align-items-center">
-            <span class="material-icons material-icons-outlined fs-3 fs-sm-9 me-2 me-sm-4">
-              mail_outline
-            </span>
-            <span class="fs-1 fs-sm-4 fs-md-6">glasses@business.com</span>
-          </a>
-        </address>
-      </div>
-      <ul class="d-flex gx-2 gx-md-4 gx-lg-8">
-        <li>
-          <a href="https://www.facebook.com/hexschool/" title="臉書粉絲團" target="_blank" class="translucent-hover">
-            <i class="fab fa-facebook align-top fs-3 fs-sm-7 fs-md-9 ms-2 ms-sm-4 ms-md-8"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/hexschool/" title="IG icon" target="_blank" class="translucent-hover">
-            <i class="fab fa-instagram align-top fs-3 fs-sm-7 fs-md-9 ms-2 ms-sm-4 ms-md-8"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://page.line.me/guv7422g?openQrModal=true" title="官方line群" target="_blank"
-            class="translucent-hover">
-            <i class="fab fa-line align-top fs-3 fs-sm-7 fs-md-9 ms-2 ms-sm-4 ms-md-8"></i>
-          </a>
-        </li>
-      </ul>
+</header>  <!-- <div class="container">
+    <div class="d-flex flex-column flex-lg-row">
+      <h2>h2</h2>
+      <h3 class="mx-lg-nm">h3</h3>
     </div>
-    <div class="d-block d-sm-flex justify-content-sm-between align-items-sm-center fw-light">
-      <span>Copyright © 2020 Glasses.All rights reserved.</span>
-      <ul class="d-block d-sm-flex gap-sm-12 fs-1 fs-s-4">
-        <li>
-          <a href="#" class="mt-2 mt-sm-0">隱私權政策</a>
-        </li>
-        <li>
-          <a href="#" class="mt-2 mt-sm-0">服務條款</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</footer>      
+  </div> -->
+  
 </body>
 
 </html>
