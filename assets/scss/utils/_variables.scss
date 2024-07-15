@@ -14,6 +14,7 @@ $cement-gray:           #555555;   // for blog.html article content
 $dark-text-emphasis:    rgba($black, .7);;   // for blog.html article time
 $light-text-emphasis:   rgba(#0A0A0A, .6);   // for article.html last figcaption
 $light-border-subtle:   #707070;  // for article.html
+$light-bg-subtle:       #F2F2F2;  // for glasses-options.html pagenation
 
 // scss-docs-start theme-color-variables
 $theme-colors: (
@@ -70,7 +71,7 @@ $font-sizes: (
   "5":   2rem,      // 32
   "6":   2.25rem,   // 36
   "7":   2.5rem,    // 40
-  "8":   2.75rem,   // 44
+  "8":   2.625rem,  // 42
   "9":   3rem,      // 48
 );
 
@@ -114,7 +115,6 @@ $border-widths: (
   x: 8px
 );
 
-$pagination-border-color: $cement-gray;
 $border-color:            #00000020;
 $primary-border-subtle:   #9F1213;    // for page title border
 
@@ -160,6 +160,25 @@ $card-spacer-x:                     1rem;
 $card-border-radius:                .25rem;
 $card-cap-padding-y:                1rem;       // for card-footer
 
+// Navs
+// $nav-pills-link-active-bg:          transparent;
+// $nav-pills-border-radius:           0;
+$nav-tabs-border-width:             0;
+$nav-tabs-link-hover-border-color:  $primary;
+$nav-tabs-border-radius:            0;
+$nav-tabs-border-color:             $light;
+
+// Pagination
+$pagination-border-color:           $cement-gray;
+$pagination-color:                  $cement-gray;
+$pagination-padding-y:              .75rem;
+$pagination-padding-x:              .75rem;
+$pagination-hover-border-color:     $cement-gray;
+$pagination-active-color:           $white;
+$pagination-active-bg:              $black;
+$pagination-active-border-color:    $cement-gray;
+$pagination-border-radius:          0;
+
 // Figures
 $figure-caption-font-size:          1rem;
 
@@ -169,3 +188,5 @@ $breadcrumb-item-padding-x:         4px;
 
 // Options
 $enable-negative-margins:           true;
+
+// darken
