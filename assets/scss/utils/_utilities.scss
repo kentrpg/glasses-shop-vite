@@ -58,7 +58,6 @@ $utilities: (
     property: width,
     class: w,
     values: (25: 25%,
-      48: calc(50% - 12px), // for store-locations.html
       50: 50%,
       33: 33.33333%, // col-4
       66: 66.66667%, // col-8
@@ -67,7 +66,7 @@ $utilities: (
       83: 83.33333%, // col-10
       100: 100%,
       s: 24px,  // fot article.html social media
-      navbar: calc(100% + 24px), // for haeder block navbar
+      navbar: calc(100% + 28px), // for haeder block navbar
       auto: auto)),
   "height": (responsive: true,
     property: height,
